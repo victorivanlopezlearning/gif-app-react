@@ -14,7 +14,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   background-color: #f3eae8;
 }
 
@@ -22,10 +22,10 @@ input {
   background-color: white;
   border-radius: 5px;
   border: 1px solid #f6aca1;
-  color: black;
-  font-size: 1.2rem;
+  color: #000000;
+  font-size: 1.5rem;
   outline: none;
-  padding: 10px 15px;
+  padding: 1.5rem;
   width: 100%;
 }
 
@@ -36,7 +36,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 

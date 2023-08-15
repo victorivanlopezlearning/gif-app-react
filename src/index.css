@@ -1,18 +1,27 @@
-* {
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(234, 234, 234);
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  font-family: Helvetica, Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  width: 90%;
   font-size: 1.6rem;
+  background-color: #f3eae8;
 }
 
 input {
   background-color: white;
   border-radius: 5px;
-  border: 1px solid rgb(97, 32, 158);
+  border: 1px solid #f6aca1;
   color: black;
   font-size: 1.2rem;
   outline: none;
@@ -28,6 +37,7 @@ h3 {
 
 h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 h2 {

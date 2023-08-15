@@ -2,12 +2,15 @@ import { useState } from 'react';
 
 const Form = ({ onAddCategory }) => {
 
-  const [inputValue, setInputValue] = useState('');
+  const [category, setCategory] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
-    onAddCategory(inputValue);
-    setInputValue('');
+
+    if ([category].includes('')) return;
+
+    onAddCategory(category);
+    setCategory('');
   };
 
   return (
@@ -17,8 +20,8 @@ const Form = ({ onAddCategory }) => {
       <input
         type="text"
         placeholder="Buscar gif"
-        onChange={({ target }) => setInputValue(target.value)}
-        value={inputValue}
+        onChange={({ target }) => setCategory(target.value)}
+        value={category}
       />
     </form>
   )

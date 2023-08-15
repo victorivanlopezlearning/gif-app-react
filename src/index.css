@@ -4,7 +4,9 @@
 }
 
 body {
-  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 input {
@@ -16,6 +18,16 @@ input {
   outline: none;
   padding: 10px 15px;
   width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {

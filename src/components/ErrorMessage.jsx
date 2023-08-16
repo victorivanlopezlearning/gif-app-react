@@ -1,8 +1,8 @@
 
-const ErrorMessage = ({ errorMesagge }) => {
+const ErrorMessage = ({ errorMessage }) => {
   return (
     <div className="error">
-      <p>{errorMesagge}</p>
+      <p>{errorMessage}</p>
     </div>
   )
 }

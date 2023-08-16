@@ -5,16 +5,16 @@ import ErrorMessage from './components/ErrorMessage';
 const GifApp = () => {
 
   const [categories, setCategories] = useState([]);
-  const [errorMesagge, setErrorMesagge] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const onAddCategory = (newCategory) => {
 
     const categoryExist = categories.find((category) => category.toUpperCase() === newCategory.toUpperCase());
     if (categoryExist) {
-      setErrorMesagge(`${newCategory} ya está listado. Por favor, indica uno diferente.`);
+      setErrorMessage(`${newCategory} ya está listado. Por favor, indica uno diferente.`);
       return;
     }
-    setErrorMesagge('');
+    setErrorMessage('');
     setCategories([newCategory, ...categories]);
   };
 
@@ -25,7 +25,7 @@ const GifApp = () => {
       <Form
         onAddCategory={onAddCategory}
       />
-      {errorMesagge && <ErrorMessage errorMesagge={errorMesagge} />}
+      {errorMessage && <ErrorMessage errorMessage={errorMessage} />}
 
       <ol>
         {categories?.map(category => (

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Form from './components/Form';
 import ErrorMessage from './components/ErrorMessage';
+import GifGrid from './components/GifGrid';
 
 const GifApp = () => {
 
@@ -27,11 +28,12 @@ const GifApp = () => {
       />
       {errorMessage && <ErrorMessage errorMessage={errorMessage} />}
 
-      <ol>
-        {categories?.map(category => (
-          <li key={category}>{category}</li>
-        ))}
-      </ol>
+      {categories?.map(category => (
+        <GifGrid
+          key={category}
+          category={category}
+        />
+      ))}
     </>
   )
 }

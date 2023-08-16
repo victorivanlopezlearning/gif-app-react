@@ -7,9 +7,10 @@ const Form = ({ onAddCategory }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if ([category].includes('')) return;
+    const newCategory = category.trim();
+    if ([newCategory].includes('')) return;
 
-    onAddCategory(category);
+    onAddCategory(newCategory);
     setCategory('');
   };
 
@@ -19,7 +20,7 @@ const Form = ({ onAddCategory }) => {
     >
       <input
         type="text"
-        placeholder="Buscar gif"
+        placeholder="Buscar GIFs"
         onChange={({ target }) => setCategory(target.value)}
         value={category}
       />

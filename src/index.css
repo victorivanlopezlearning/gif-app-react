@@ -49,6 +49,16 @@ h3 {
   margin-bottom: 5px;
 }
 
+.error {
+  padding: 1rem;
+}
+.error p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #921212;
+}
+
 .card-grid {
   display: flex;
   flex-direction: row;

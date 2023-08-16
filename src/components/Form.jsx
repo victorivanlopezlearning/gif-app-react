@@ -1,30 +1,38 @@
 import { useState } from 'react';
+import ErrorMessage from './ErrorMessage';
 
 const Form = ({ onAddCategory }) => {
 
   const [category, setCategory] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     const newCategory = category.trim();
-    if ([newCategory].includes('')) return;
-
+    if ([newCategory].includes('')) {
+      setErrorMessage('No debe ir vacío');
+      return;
+    };
+    setErrorMessage('');
     onAddCategory(newCategory);
     setCategory('');
   };
 
   return (
-    <form
-      onSubmit={onSubmit}
-    >
-      <input
-        type="text"
-        placeholder="Buscar GIFs"
-        onChange={({ target }) => setCategory(target.value)}
-        value={category}
-      />
-    </form>
+    <>
+      <form
+        onSubmit={onSubmit}
+      >
+        <input
+          type="text"
+          placeholder="Buscar GIFs"
+          onChange={({ target }) => setCategory(target.value)}
+          value={category}
+        />
+      </form>
+      {errorMessage && <ErrorMessage errorMessage={errorMessage} />}
+    </>
   )
 }
 

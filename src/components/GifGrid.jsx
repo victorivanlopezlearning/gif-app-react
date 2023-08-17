@@ -21,7 +21,10 @@ const GifGrid = ({ category }) => {
 
       <div className="card-grid">
         {imagesGifs.map((image) => (
-          <GifItem key={image.id} image={image} />
+          <GifItem
+            key={image.id}
+            {...image} // Esparcir propiedades
+          />
         ))}
       </div>
     </>

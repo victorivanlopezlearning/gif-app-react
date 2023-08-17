@@ -1,9 +1,10 @@
 
-const GifItem = ({ image }) => {
-  const {  } = image;
+const GifItem = ({ title, url }) => {
+
   return (
     <div className="card">
-      GifItem
+      <img src={url} alt={`Imagen ${title}`} />
+      <p>{title}</p>
     </div>
   )
 }

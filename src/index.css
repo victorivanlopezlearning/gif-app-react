@@ -46,7 +46,6 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  margin-bottom: 5px;
 }
 
 img {
@@ -97,9 +96,9 @@ img {
   padding: 1.5rem;
 }
 
-.card p {
+.card h3 {
   font-size: 1.5rem;
-  margin-top: 5px;
+  margin: 1rem 0;
   text-align: center;
 }
 

@@ -63,6 +63,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .card-grid {

@@ -1,23 +1,15 @@
-import { useEffect, useState } from "react";
 import GifItem from "./GifItem";
-import { getGifs } from "../helpers";
+import useGifsByCategory from "../hooks/useGifsByCategory";
 
 const GifGrid = ({ category }) => {
 
-  const [imagesGifs, setImagesGifs] = useState([]);
-
-  const getImagesFromGifs = async () => {
-    const images = await getGifs(category);
-    setImagesGifs(images);
-  };
-
-  useEffect(() => {
-    getImagesFromGifs();
-  }, [])
+  const { imagesGifs, isLoading } = useGifsByCategory(category);
 
   return (
     <>
       <h2>{category}</h2>
+
+      {isLoading && <h3>Cargando...</h3>}
 
       <div className="card-grid">
         {imagesGifs.map((image) => (

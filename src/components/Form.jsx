@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ErrorMessage from './ErrorMessage';
 
-const Form = ({ onAddCategory }) => {
+export const Form = ({ onAddCategory }) => {
 
   const [category, setCategory] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -35,5 +35,3 @@ const Form = ({ onAddCategory }) => {
     </>
   )
 }
-
-export default Form;

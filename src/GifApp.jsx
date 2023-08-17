@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import Form from './components/Form';
-import ErrorMessage from './components/ErrorMessage';
-import GifGrid from './components/GifGrid';
+import { Form, ErrorMessage, GifGrid } from './components';
 
 const GifApp = () => {
 

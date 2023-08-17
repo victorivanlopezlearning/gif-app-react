@@ -1,7 +1,7 @@
 import GifItem from "./GifItem";
 import useGifsByCategory from "../hooks/useGifsByCategory";
 
-const GifGrid = ({ category }) => {
+export const GifGrid = ({ category }) => {
 
   const { imagesGifs, isLoading } = useGifsByCategory(category);
 
@@ -22,5 +22,3 @@ const GifGrid = ({ category }) => {
     </>
   )
 }
-
-export default GifGrid;

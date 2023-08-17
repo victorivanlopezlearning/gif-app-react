@@ -1,1 +1,1 @@
-export { getGifs } from './getGifs';
+export * from './getGifs';

@@ -1,4 +1,4 @@
-import GifItem from "./GifItem";
+import { GifItem } from "./GifItem";
 import useGifsByCategory from "../hooks/useGifsByCategory";
 
 export const GifGrid = ({ category }) => {

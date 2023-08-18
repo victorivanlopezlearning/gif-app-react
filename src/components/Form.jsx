@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ErrorMessage from './ErrorMessage';
+import { ErrorMessage } from './ErrorMessage';
 
 export const Form = ({ onAddCategory }) => {
 

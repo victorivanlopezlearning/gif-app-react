@@ -1,8 +1,9 @@
-# Gif App | React - Vanilla CSS - API - Vite
+# Gif App | React - Vanilla CSS - API - React Testing Library - Vite
 
 ## Description
 - Development with React.
 - API used [Giphy Developers](https://developers.giphy.com/).
+- Testing with React Testing Library
 
 ## Installation
 
@@ -20,4 +21,5 @@ To install and run the project locally, follow these steps:
 - [React V18](https://es.react.dev/)
 - Mobile-first workflow
 - API - [Giphy Developers](https://developers.giphy.com/)
+- Testing - [React Testing Library](https://testing-library.com/)
 - Build Tool - [Vite V4](https://vitejs.dev)

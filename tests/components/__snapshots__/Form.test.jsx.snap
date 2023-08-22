@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in <Form /> Should match with the snapshot 1`] = `
+<div>
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="Buscar GIFs"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;

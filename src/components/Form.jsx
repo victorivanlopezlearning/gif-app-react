@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { ErrorMessage } from './ErrorMessage';
 
@@ -35,3 +36,7 @@ export const Form = ({ onAddCategory }) => {
     </>
   )
 }
+
+Form.propTypes = {
+  onAddCategory: PropTypes.func.isRequired,
+};
